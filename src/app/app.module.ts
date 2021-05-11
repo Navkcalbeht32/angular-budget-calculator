@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
+import { MatDialogModule } from '@angular/material/dialog';
+
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -10,6 +12,7 @@ import { BudgetItemListComponent } from './budget-item-list/budget-item-list.com
 import { BudgetItemCardComponent } from './budget-item-list/budget-item-card/budget-item-card.component';
 import { HeaderComponent } from './header/header.component';
 import { EditItemModalComponent } from './edit-item-modal/edit-item-modal.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -19,12 +22,15 @@ import { EditItemModalComponent } from './edit-item-modal/edit-item-modal.compon
     BudgetItemListComponent,
     BudgetItemCardComponent,
     HeaderComponent,
-    EditItemModalComponent
+    EditItemModalComponent,
+    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    BrowserAnimationsModule,
+    [BrowserModule, MatDialogModule]
   ],
   providers: [],
   bootstrap: [AppComponent]

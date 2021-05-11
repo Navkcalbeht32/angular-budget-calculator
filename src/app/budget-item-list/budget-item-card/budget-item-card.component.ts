@@ -10,6 +10,7 @@ export class BudgetItemCardComponent implements OnInit {
 
   @Input() item: BudgetItem;
   @Output() DeleteClick: EventEmitter<any> = new EventEmitter<any>();
+  @Output() cardClick: EventEmitter<any> = new EventEmitter<any>();
 
   constructor() { }
 
@@ -18,6 +19,10 @@ export class BudgetItemCardComponent implements OnInit {
 
   onDelete() {
     this.DeleteClick.emit();
+  }
+
+  onCardClick() {
+    this.cardClick.emit();
   }
 
 }

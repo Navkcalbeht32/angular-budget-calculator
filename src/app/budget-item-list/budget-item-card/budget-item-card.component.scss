@@ -11,6 +11,12 @@
     border-top: 1px solid $light-gray;
     background-color: $white;
 
+    &:hover {
+        background-color: $light-gray;
+        cursor: pointer;
+        border-radius: 10px;
+    }
+
     &:hover > .card-delete i {
         color: $red;
         font-size: 20px;

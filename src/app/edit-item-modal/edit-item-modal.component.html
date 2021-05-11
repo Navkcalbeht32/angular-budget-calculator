@@ -1,1 +1,4 @@
-<p>edit-item-modal works!</p>
+<h4 class="title">Edit values</h4>
+<p>{{item.amount}}</p>
+<p>{{item.description}}</p>
+<app-add-item-form [item]="item" (formSubmit)="onSubmitted($event)"></app-add-item-form>
