@@ -1,0 +1,14 @@
+<form #itemForm="ngForm" (ngSubmit)="onSubmit(itemForm)">
+    <div class="add-item">
+        <div class="add-item-wrapper">
+            <div class="add-item-wrapper-input">
+                <input type="number" name="amount" placeholder="Amount ( - for expenses)" required [ngModel]="item.amount">
+                <input type="text" name="description" placeholder="Add description" required [ngModel]="item.description">
+                <button type="submit" [disabled]="!itemForm.valid" >Add Value</button>
+            </div>
+        </div>
+        <hr>
+    </div>
+</form>
+
+

@@ -1,0 +1,59 @@
+@import '../..//main-styles.scss';
+
+.add-item {
+    width: 100%;
+    height: fit-content;
+    
+
+    &-wrapper {
+        height: 250px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &-input {
+            height: fit-content;
+            width: 90%;
+            display: flex;
+            flex-direction: column;
+            margin: 0 auto;
+            max-width: 500px;
+            display: flex;
+            justify-content: space-between;
+
+
+            input {
+                border: 1px solid $gray;
+                background-color: $light-gray;
+                border-radius: 5px;
+                height: 48px;
+                outline: none;
+                padding: 0 20px;
+                font-size: 16px;
+                margin: 10px 0;
+                transition: all ease-in-out 0.2s;
+
+                &:focus-within {
+                    background-color: $white;
+                }
+            }
+            
+            button {
+                border: none;
+                height: 100%;
+                padding: 10px 18px;
+                border-radius: 5px;
+                cursor: pointer;
+                margin: 10px 0;
+                font-size: 15px;
+                color: $white;
+                background: $purple;
+
+                &:disabled {
+                    opacity: 0.5;
+                    cursor: not-allowed;
+                }
+            }
+        }
+    }
+}

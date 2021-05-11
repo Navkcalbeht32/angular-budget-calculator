@@ -1,0 +1,14 @@
+<app-header></app-header>
+
+<div class="total-budget">
+    <div class="total-budget-wrapper">
+        <div class="total-budget-wrapper-info" >
+            <h3>Total Account Value</h3>
+            <h1 class="green">$ 13950</h1>
+        </div>
+    </div>
+</div>
+
+<app-add-item-form (formSubmit)="addItem($event)"></app-add-item-form>
+
+<app-budget-item-list [budgetItems]="budgetItems" (delete)="deleteItem($event)"></app-budget-item-list>

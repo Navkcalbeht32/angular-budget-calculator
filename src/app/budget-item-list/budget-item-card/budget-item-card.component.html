@@ -1,0 +1,11 @@
+<div class="card" [ngClass]="{ 'income': item.amount >=0, 'expense': item.amount < 0 }">
+    <div class="card-description">
+        <h4>{{ item.description }}</h4>
+    </div>
+    <div class="card-amount">
+        <span>{{ item.amount }}</span>
+    </div>
+    <div class="card-delete" (click)="onDelete()">
+        <i class="fas fa-minus-circle"></i>
+    </div>
+</div>

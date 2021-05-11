@@ -1,0 +1,37 @@
+@import '../../../main-styles.scss';
+
+.card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 16px 36px;
+    box-shadow: none;
+    border-radius: 0;
+    border-top: 1px solid $light-gray;
+    background-color: $white;
+
+    &:hover > .card-delete i {
+        color: $red;
+        font-size: 20px;
+    }
+
+    &-description {
+        flex: 0.7;
+    }
+
+    &-amount {
+        flex: 0.2;
+    }
+
+    &-delete {
+        flex: 0.1;
+        cursor: pointer;
+    }
+
+    i {
+        color: $gray;
+        max-width: 10px;
+        transition: ease-in-out all 0.1s;
+    }
+}
